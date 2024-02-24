@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+    <head>
+      <link rel="stylesheet" href="website.css">
+    </head>
+    <body>
+      <header>
+        <ul id="ul1">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <H1>THE CRUST PIZZA</H1>
+        <a href="#" id="mlk">LET ME SEE THE MENU</a>
+        <div class="w3-padding">
+          <span class="opening">Open from 10am to 12pm</span>
+        </div>
+      </header>
+      <div id="div2">
+        <h1>THE MENU</h1>
+        <div id="div3">
+          <ul id="ul2">
+            <li id="li1"><a href="#pizza"onclick="fun()">pizza</a></li>
+            <li id="li2"><a href="#salads"onclick="funn()">salads</a></li>
+            <li id="li3"><a href="#starter"onclick="funnn()">starter</a></li>
+            </ul>
+            <div id="div4">
+            <h3 id="Margherita">Margherita</h3><br>
+            <div id="div5">
+              <h4 id="hh1">$12.50</h4>
+            </div>
+            <p id="pp1">Fresh tomatoes, fresh mozzarella, fresh basil</p><br>
+            <h3 id="Formaggio">Formaggio</h3><br>
+            <div id="div6">
+              <h4 id="hh2">$15.50</h4>
+            </div>
+            <p id="pp2">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p><br>
+          <h3 id="Chicken">Chicken</h3><br>
+          <div id="div7">
+            <h4 id="hh3">$17.00</h4>
+          </div>
+          <p id="pp3">Fresh tomatoes, mozzarella, chicken, onions</p><br>
+          <h3 id="Pineapple'o'clock">Pineapple'o'clock</h3><br>
+          <div id="div8">
+            <h4 id="hh4">$16.50</h4>
+          </div>
+          <p id="pp4">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p><br>
+          <h3 id="MeatTownHot!">Meat Town Hot!</h3><br>
+          <div id="div9">
+            <h4 id="hh5">$20.00</h4>
+          </div>
+          <p id="pp5">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p><br>
+          <h3 id="Parma New">Parma New</h3><br>
+          <div id="div10">
+            <h4 id="hh6">$21.50</h4>
+          </div>
+          <p id="pp6">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p><br>
+        </div>
+        </div>
+        </div>
+        <div id="div11">
+          <h1>ABOUT</h1>
+          <div id="div12">
+            <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>     
+           <div id="div13">
+            <p><b>The Chef?</b>Mr. Italiano himself</p><br>
+          <p>We are proud of our interiors</p><br>
+           </div>
+          <div id="div14">
+          <img src="chef.jpg">
+          </div>
+          <div id="div15">
+            <img src="restaurant.jpg">
+          </div>
+          <div id="div16">
+            <h3>Opening Hours</h3><br>
+            <p>Mon & Tue CLOSED</p><br>
+          <p>Wednesday 10.00 - 24.00</p><br>
+          <p>Thursday 10:00 - 24:0</p><br>
+          </div>
+          <div id="div17">
+            <p>Friday 10:00 - 12:00</p><br>
+            <p>Saturday 10:00 - 23:00</p><br>
+            <p>Sunday Closed</p><br>
+          </div>
+          <div id="clr"></div>
+          </div>
+          </div>
+            <img src="map.jpg">
+          <div id="div19">
+            <h1>CONTACT</h1>
+            <div id="div20">
+              <div id="div21">
+            <p>Find us at some address at some place or call us at +92 3042069858</p><br>
+            <p><b>FYI!</b> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste</p><br>
+            </div>
+          <div id="div22">
+            <p><b>Reserve</b>A table, ask for today's special or just send us a message</p><br>
+          </div>
+          </div>
+          <div id="div23">
+          <form>
+            <input type="text" id="llp" placeholder="NAME">
+            <p id="err1" style="color:red"></p><br>
+            <input type="text"  id="llp1"placeholder="HOW MANY PEOPLE">
+            <p id="err2" style="color:red"></p><br>
+            <input type="text"  id="llp2"placeholder=" DATE AND TIME">
+            <p id="err3" style="color:red"></p><br>
+            <input type="text" id="llp3"placeholder=" MESSAGE">
+            <p id="err4" style="color:red"></p><br>
+            <input type="submit"  id="llp4"id="llp" id="llp1" id="llp2" id="llp3" onclick="myar()" >
+            </form>
+            </div>     
+          </div>
+    </div>
+    <script>
+        
+        function myar(){
+        
+        let a=document.getElementById("llp").value;
+        let b=document.getElementById("llp1").value;
+        let c=document.getElementById("llp2").value;
+        let d=document.getElementById("llp3").value;
+        event.preventDefault();
+        if(a==""){
+document.getElementById("err1").innerHTML="Please Enter Name";
+        }
+        if(b==""){
+            document.getElementById("err2").innerHTML="Please Enter peoples";
+        }
+        if(c==""){
+            document.getElementById("err3").innerHTML="Please Enter date and time";
+        }
+        if(d==""){
+            document.getElementById("err4").innerHTML="Please Enter message";
+        }
+        }
+                       function fun(){
+                document.getElementById("Margherita").innerHTML="Margherita";
+                document.getElementById("pp1").innerHTML="Fresh tomatoes, fresh mozzarella, fresh basil";
+                document.getElementById("Formaggio").innerHTML="Formaggio";
+                document.getElementById("pp2").innerHTML="Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)";
+                document.getElementById("Chicken").innerHTML="Chicken";
+                document.getElementById("pp3").innerHTML="Fresh tomatoes, mozzarella, chicken, onions";
+                document.getElementById("Pineapple'o'clock").innerHTML="Pineapple'o'clock";
+                document.getElementById("pp4").innerHTML="Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil";
+                document.getElementById("MeatTownHot!").style.display="block";
+                document.getElementById("pp5").style.display="block";
+                document.getElementById("Parma New").style.display="block";
+                document.getElementById("pp6").innerHTML="block";
+                document.getElementById("hh1").innerHTML="$12.50";
+                document.getElementById("hh2").innerHTML="$15.50";
+                document.getElementById("hh3").innerHTML="$17.00";
+                document.getElementById("hh4").innerHTML="$16.50";
+                document.getElementById("hh5").innerHTML="$20.00";
+                document.getElementById("hh6").innerHTML="$21.50";
+              }
+            function funn(){
+                document.getElementById("Margherita").innerHTML="Lasagna Popular";
+                document.getElementById("pp1").innerHTML="Special sauce, mozzarella, parmesan, ground beef";
+                document.getElementById("Formaggio").innerHTML="Ravioli";
+                document.getElementById("pp2").innerHTML="Ravioli filled with cheese";
+                document.getElementById("Chicken").innerHTML="Spaghetti Classica";
+                document.getElementById("pp3").innerHTML="Fresh tomatoes, onions, ground beef";
+                document.getElementById("Pineapple'o'clock").innerHTML="Seafood pasta";
+                document.getElementById("pp4").innerHTML="Salmon, shrimp, lobster, garlic";
+                document.getElementById("MeatTownHot!").style.display="none";
+                document.getElementById("pp5").style.display="none";
+                document.getElementById("Parma New").style.display="none";
+                document.getElementById("pp6").style.display="none";
+                document.getElementById("hh1").innerHTML="$13.50";
+                document.getElementById("hh2").innerHTML="$14.50";
+                document.getElementById("hh3").innerHTML="$11.00";
+                document.getElementById("hh4").innerHTML="$25.50";
+                document.getElementById("hh5").style.display="none";
+                document.getElementById("hh6").style.display="none";
+
+              }
+              function funnn(){
+                document.getElementById("Margherita").innerHTML="Today's Soup Seasonal";
+                document.getElementById("pp1").innerHTML="Ask the waiter";
+                document.getElementById("Formaggio").innerHTML="Bruschetta";
+                document.getElementById("pp2").innerHTML="Bread with pesto, tomatoes, onion, garlic";
+                document.getElementById("Chicken").innerHTML="Garlic bread";
+                document.getElementById("pp3").innerHTML="Grilled ciabatta, garlic butter, onions";
+                document.getElementById("Pineapple'o'clock").innerHTML="Tomozzarella";
+                document.getElementById("pp4").innerHTML="Tomatoes and mozzarella";
+                document.getElementById("MeatTownHot!").style.display="none";
+                document.getElementById("pp5").style.display="none";
+                document.getElementById("Parma New").style.display="none";
+                document.getElementById("pp6").style.display="none";
+                document.getElementById("hh1").innerHTML="$5.50";
+                document.getElementById("hh2").innerHTML="$8.50";
+                document.getElementById("hh3").innerHTML="$9.50";
+                document.getElementById("hh4").innerHTML="$10.50";
+                document.getElementById("hh5").style.display="none";
+                document.getElementById("hh6").style.display="none";
+              }
+          </script>
+        </body>
+</html>
